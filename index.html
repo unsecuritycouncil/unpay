@@ -9,7 +9,7 @@
 
 <head>
 
-<div class="everything" style="pointer-events:none;">
+<div class="everything" style="">
 
 
 <!--
@@ -275,7 +275,7 @@ so markup. very website. wow.
 				<!-- <button class="btn btn-md btn-warning wallet-button" data-toggle="modal" data-target="#browser-modal"><span class="fa fa-cloud"></span> <span data-i18n="dgc-wallet-browser">Browser</span></button> -->
 
 
-				<a class="btn btn-md btn-danger wallet-button" href="https://github.com/dogecoin/dogecoin" target="_blank"><span class="fa fa-github"></span> <span data-i18n="dgc-wallet-source">Source</span></a>
+				<a class="btn btn-md btn-danger wallet-button" href="" target="_blank"><span class="fa fa-github"></span> <span data-i18n="dgc-wallet-source">Source</span></a>
 
 
 			</div>
@@ -341,9 +341,6 @@ so markup. very website. wow.
 
 
 					<p data-i18n="dgc-quick-desc" class="white-text">UNpay is a decentralized, peer-to-peer digital currency that enables you to easily send money online. Think of it as "the internet currency." Built by the United Nations Security Council to provide a mutlilateral currency alternative to the inflation comprimised Lebanese Pound, UNpay is the future of commerce and currency.</p>
-
-
-					<h4 class="white-text"><a href="https://unsecuritycouncil.github.io/unpay/gettingstarted"><strong data-i18n="dgc-get-started-now">Get Started Now</strong></a> | <a style="cursor: pointer;" data-toggle="modal" data-target="#learnmore-modal"><strong data-i18n="dgc-learn-more">Learn More</strong></a></h4>
 
 
 					<hr class="hr-white">
@@ -432,27 +429,54 @@ so markup. very website. wow.
 				</div>
 
 
-				<div class="col-md-8" class="white-text">
-
-
-					<h1 class="fit-h1 white-text"><strong data-i18n="dgc-getting-started">How to get started with UNpay.</strong></h1>
-
-
-					<p data-i18n="dgc-setup-wallet" class="white-text">Setting up a UNpay wallet is as <strong>easy</strong> as 1, 2, 3. Seriously! Check out our Getting Started guide below.</p>
-
-
-					<h4><a href="https://dogecoin.com/getting-started" class="white-text"><strong data-i18n="dgc-get-started-now">Get Started Now</strong></a></h4>
-
-
 					<hr class="hr-white">
 
+  <center><h1 class="fit-h1 white-text"><strong data-i18n="dgc-getting-started">UNpay Example: Abbas</strong></h1>
+<div id="abbasslide"><img src='https://docs.google.com/drawings/d/e/2PACX-1vTIcVaKneDigbW9Diqpp4Vp6GwdNIzSehWMFAmEgiQ1_hplDaPKzj9Wxga-vg5ahSDBe6ccsCA3qCTx/pub?w=960&h=720' style='width:500px;'>
+</div>
+    <div class="col-sm-12" id="my_styles">
+       <button type="submit" class="btn btn-warning" onclick="slideone()" id="Part One">Part One</button>
+       <button type="submit" class="btn btn-warning" onclick="slidetwo()" id="2">Part Two</button>
+       <button type="submit" class="btn btn-warning" onclick="slidethree()" id="3">Part Three</button>
+       <button type="submit" class="btn btn-warning" onclick="slidefour()" id="4">Part Four</button>
+    </div>
+ 
+   <style>
+   .active{
+    background:auto;
+}
+button.btn:active{
+    background:auto;
+}
+</style>
+<script>
+function slideone() {
+document.getElementById("abbasslide").innerHTML = "<img src='https://docs.google.com/drawings/d/e/2PACX-1vTIcVaKneDigbW9Diqpp4Vp6GwdNIzSehWMFAmEgiQ1_hplDaPKzj9Wxga-vg5ahSDBe6ccsCA3qCTx/pub?w=960&h=720' style='width:500px;'><br><div class='caption' style='font-size:20px;padding:9px;border-radius:9px;color:black;background-color:silver;width:500px;'>Abbas has a life savings of 15 million Lebanese Pounds, 68% less valuable than a year ago because of inflation.</div><br>";
+}
 
-					<p data-i18n="dgc-edu-help" class="white-text">If you need help, drop by r/UNpayducation on Reddit! <br /> We're a helpful bunch of people and we'll answer any questions that you throw at us!</p>
+function slidetwo() {
+document.getElementById("abbasslide").innerHTML = "<img src='https://docs.google.com/drawings/d/e/2PACX-1vRBzVhTK7iBUm1i7VeNNe42hoRFzQ98arFn2yOj8SDiOGlOC1KYBo503qMN8Po7brux7kB7p1tajVGP/pub?w=960&h=720' style='width:500px;'><br><div class='caption' style='font-size:20px;padding:9px;border-radius:9px;color:black;background-color:silver;width:500px;'>Abbas gets the UNpay app and exchanges his 15 Million Lebanese Pounds for 10,000 Annan's (January, 2021 rates)</div><br>";
+}
 
+function slidethree() {
+document.getElementById("abbasslide").innerHTML = "<img src='https://docs.google.com/drawings/d/e/2PACX-1vRMJU-709Zbkj1P6pzAcHZZFev69G-7aYLgWMSGCZlm3OWxROpRyLfiDnQPo_WapfTxIbXR4ly8DMY0/pub?w=960&h=720' style='width:500px;'><br><div class='caption' style='font-size:20px;padding:9px;border-radius:9px;color:black;background-color:silver;width:500px;'>Abbas can now invest in his dream home without worrying about 145% inflation, his UNpay holdings carry a historic inflation rate of less than 10%.</div><br>";
+}
 
-					<h4><a href="https://www.reddit.com/r/dogeducation" class="white-text"><strong data-i18n="dgc-dogeducation">UNpayducation Community</strong></a></h4>
+function slidefour() {
+document.getElementById("abbasslide").innerHTML = "<img src='https://i.pinimg.com/originals/02/ce/b2/02ceb2651f848192225d400adc7f26f8.gif' style='width:500px;'><br><div class='caption' style='font-size:20px;padding:9px;border-radius:9px;color:black;background-color:silver;width:500px;'>Abbas is now investing in Lebanon, generating jobs, economic opportunity and long term investment: the keys to a successful and independent nation.</div><br>";
+}
 
+jQuery("#my_styles .btn").click(function(){
+        jQuery("#my_styles .btn").removeClass('active');
+        jQuery(this).toggleClass('active'); 
+});
+</script>
+</center>
 
+<hr class="hr-white">
+<br>
+<br>
+<br>
 				</div>
 
 
