@@ -1,0 +1,46 @@
+
+  <div class="unpaydemonstration" style="font-size:15px">
+How UNpay works: example of Abbas
+</div>
+<div id="abbasslide"><img src='https://docs.google.com/drawings/d/e/2PACX-1vTIcVaKneDigbW9Diqpp4Vp6GwdNIzSehWMFAmEgiQ1_hplDaPKzj9Wxga-vg5ahSDBe6ccsCA3qCTx/pub?w=960&h=720' style='width:500px;'>
+</div>
+    <div class="col-sm-12" id="my_styles">
+       <button type="submit" class="btn btn-warning" onclick="slideone()" id="Part One">Part One</button>
+       <button type="submit" class="btn btn-warning" onclick="slidetwo()" id="2">Part Two</button>
+       <button type="submit" class="btn btn-warning" onclick="slidethree()" id="3">Part Three</button>
+       <button type="submit" class="btn btn-warning" onclick="slidefour()" id="4">Part Four</button>
+    </div>
+ 
+   <style>
+   .active{
+    background:red;
+}
+button.btn:active{
+    background:red;
+}
+</style>
+<script>
+function slideone() {
+document.getElementById("abbasslide").innerHTML = "<img src='https://docs.google.com/drawings/d/e/2PACX-1vTIcVaKneDigbW9Diqpp4Vp6GwdNIzSehWMFAmEgiQ1_hplDaPKzj9Wxga-vg5ahSDBe6ccsCA3qCTx/pub?w=960&h=720' style='width:500px;'><br><div class='caption' style='font-size:20px;padding:9px;border-radius:9px;color:black;background-color:silver;width:500px;'>Abbas has a life savings of 15 million Lebanese Pounds, 68% less valuable than a year ago because of inflation.</div><br>";
+}
+
+function slidetwo() {
+document.getElementById("abbasslide").innerHTML = "<img src='https://docs.google.com/drawings/d/e/2PACX-1vRBzVhTK7iBUm1i7VeNNe42hoRFzQ98arFn2yOj8SDiOGlOC1KYBo503qMN8Po7brux7kB7p1tajVGP/pub?w=960&h=720' style='width:500px;'><br><div class='caption' style='font-size:20px;padding:9px;border-radius:9px;color:black;background-color:silver;width:500px;'>Abbas gets the UNpay app and sells his 15 Million Lebanese Pounds in exchange for 10,000 Annan's (January, 2021 prices)</div><br>";
+}
+
+function slidethree() {
+document.getElementById("abbasslide").innerHTML = "<img src='https://docs.google.com/drawings/d/e/2PACX-1vRBzVhTK7iBUm1i7VeNNe42hoRFzQ98arFn2yOj8SDiOGlOC1KYBo503qMN8Po7brux7kB7p1tajVGP/pub?w=960&h=720' style='width:500px;'><br><div class='caption' style='font-size:20px;padding:9px;border-radius:9px;color:black;background-color:silver;width:500px;'>Abbas gets the UNpay app and sells his 15 Million Lebanese Pounds in exchange for 10,000 Annan's (January, 2021 prices)</div><br>";
+}
+
+function slidefour() {
+document.getElementById("abbasslide").innerHTML = "<img src='https://docs.google.com/drawings/d/e/2PACX-1vRBzVhTK7iBUm1i7VeNNe42hoRFzQ98arFn2yOj8SDiOGlOC1KYBo503qMN8Po7brux7kB7p1tajVGP/pub?w=960&h=720' style='width:500px;'><br><div class='caption' style='font-size:20px;padding:9px;border-radius:9px;color:black;background-color:silver;width:500px;'>Abbas can now invest in his dream home without worrying about 145% inflation, his UNpay Annan's have a historic inflation rate of less than 10%.</div><br>";
+}
+
+jQuery("#my_styles .btn").click(function(){
+        jQuery("#my_styles .btn").removeClass('active');
+        jQuery(this).toggleClass('active'); 
+});
+</script>
+
+
+    
